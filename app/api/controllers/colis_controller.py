@@ -103,8 +103,23 @@ def colis_search(db:Session, zone_name:str):
     
      
     
+def delete_colis(db: Session, colis_id: int):
+    colis = db.query(Colis).filter(Colis.id == colis_id).first()
     
-    
+    if not colis:
+        raise HTTPException(status_code=404, detail="Colis introuvable")
+
+    db.query(HistoriqueStatut).filter(
+        HistoriqueStatut.id_colis == colis_id
+    ).delete()
+
+    db.delete(colis)
+    db.commit()
+
+    logger.success(f"colis supprimé avec succès (ID: {colis_id})")
+
+    return {"message": "Colis supprimé"}
+   
     
     
     
