@@ -8,3 +8,8 @@
 2026-01-14 20:03:35 | SUCCESS  | colis créé avec succès (ID: 14)
 2026-01-14 20:05:36 | SUCCESS  | L'API YouExpress est prête et en ligne
 2026-01-14 20:06:05 | SUCCESS  | L'API YouExpress est prête et en ligne
+2026-01-14 21:17:16 | INFO     | Tentative de création d'un destinataire : sara.ouss@gmail.com
+2026-01-14 21:17:16 | SUCCESS  | Destinataire créé avec succès (ID: 9)
+2026-01-14 21:21:22 | INFO     | Mise à jour demandée pour  destinataire ID 9
+2026-01-14 21:21:22 | SUCCESS  | Destinataire ID 9 mis à jour avec succès
+2026-01-14 21:22:21 | WARNING  | ACTION CRITIQUE : Destinataire ID 9 supprimé de la base
